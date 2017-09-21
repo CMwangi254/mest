@@ -13,7 +13,7 @@ class Eit(School):
         self.country = country
         self.tech_funfact = tech_funfact
         try:
-            with open("eit2018.csv", "w") as csvInit:
+            with open("eit2018.csv", "xw") as csvInit:
                 csvWriter = csv.writer(csvInit)
                 headers = ['Name', 'Nationality', 'Funfact']
                 csvWriter.writerow(headers)
@@ -78,7 +78,7 @@ class Fellow(School):
         return self.happiness_level
 
     def __repr__(self):
-        return "{} comes from {} and my happiness level is {}".format(self.ename, self.country, self.happiness_level)
+        return "{} comes from {} and the happiness level is {}".format(self.ename, self.country, self.happiness_level)
 
 
 class Person:
