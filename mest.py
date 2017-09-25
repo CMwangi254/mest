@@ -93,6 +93,8 @@ class Eit(Person):
     def __init__(self, ename, country, tech_funfact):
         super().__init__(ename, country)
         self.tech_funfact = tech_funfact
+        def get_fact(self)
+        print('i'' + self.funfact + 'i'')
 
 
 class fellow(Person):
